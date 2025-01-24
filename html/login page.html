@@ -3,100 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registerpage</title>
+    <title>Login page in JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        
-
-.links{
-    margin-left: 500px;
-    padding: 40px;
-    position: absolute;
-    margin-top: -70px;
-    display: flex;
-    column-gap: 40px;
-
-  }
-  a{
-    text-decoration: none;
-  }
-  .Login{
-    position: absolute;
-    margin-top: -30px;
-    margin-left: 1000px;
-    text-align: center;
-    align-content: center;
-    
-  }
-  .Register{
-    position: absolute;
-    margin-left: 1100px;
-    margin-top: -30px;
-
-    }
-    .Cart{
-        position: absolute;
-        margin-left: 1220px;
-        margin-top: -30px;
-    }
-    button img{
-                margin-bottom: -5px;
-                
-                
-            }
-            .body{
-                background-color:rgb(215, 224, 224);
-                height: 80px;
-                
-            }
-            .send{
-                margin-left: 680px;
-                margin-top: 20px;
-                height: 35px;
-                width: 80px;
-                background-color: rgb(24, 160, 103);
-                color: white;
-            }
-            .name{
-                margin-left: 600px;
-            }
-            .three{
-                margin-left: 600px;
-
-            }
-            input{
-                height: 25px;
-                width: 300px;
-            }
-            .underline{
-                text-decoration: underline;
-            }
+        .Eco{
+            margin-left: 45px;
+            font-size: 45px;
+        }
+        .layout{
+           margin-left: 450px;
+           padding: 20px;
+           position: absolute;
+           margin-top: -50px;
+           display: flex;
+           column-gap: 25px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+        }
+        a:hover{
+            color:darkgrey;
+        }
+        .main{
+            margin-top: -10px;
+            background-color: lightslategrey;
+            height:90px;
+            width:1350px;
+            border-top: 100px;
+        }
+        .log{
+            height:35px;
+            width:65px;
+            font-size: 20px;
+            padding-left:30px;
+            border-radius: 5px;
+        }
+        .regist{
+            height:35px;
+            width:80px;
+            font-size: 20px;
+            padding-left:35px ;
+            border-radius: 5px;
+        }
+        .cart{
+            height:35px;
+            width:55px;
+            font-size: 20px;
+            padding-left:30px ;
+            border-radius: 5px;
+        }
+        .zero{
+            position:absolute;
+            margin-left: 320px;
+            margin-top: 10px;
+        }
+        .log-img{
+            height:30px;
+            width:20px;
+            margin-left: 965px;
+            position: absolute;
+            margin-top: -45px;
+        }
+        .log:hover{
+            color: white;
+            background-color: black;
+        }
+        .reg{
+            height:30px;
+            width:20px;
+            margin-left: 1085px;
+            position: absolute;
+            margin-top: -45px; 
+        }
+        .regist:hover{
+            color:white;
+            background-color: black;
+        }
+        .cart-img{
+            height:30px;
+            width:20px;
+            margin-left: 1220px;
+            position: absolute;
+            margin-top: -45px;
+        }
+        .cart:hover{
+            color:white;
+            background-color: black;
+        }
+        .head{
+            margin-left: 600px;
+            font-size: 45px;
+            margin-top: -5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input{
+            height:50px;
+            width:450px;
+            font-size: 20px;
+            border-radius:  6px;
+        }
+        .mails{
+            margin-left: 480px;
+        }
+        p{
+            font-size: 23px;
+        }
+        .log1{
+            height: 50px;
+            width:120px;
+            margin-left: 650px;
+            font-size: 20px;
+            background-color: gray;
+            color: white;
+        }
+        .button1{
+           position: relative;
+           top: -50px;
+           left: 1020px;
+           font-size: 15px;
+           border: 1px solid black;
+           border-radius: 5px;
+           height: 35px;
+           margin-left: 10px;
+           padding-right: 10px;
+        }
+        .button1:hover{
+           background-color: black;
+           color: white;
+        }
+        .new{
+            margin-left: 470px;
+        }
+        .next{
+            color: aqua;
+        }
+        .sr{
+            margin-left: 550px;
+        }
+        #heart{
+            color: red;
+        }
     </style>
-    
 </head>
 <body>
-    <div class="body">
-        <h1>Ecommerce</h1>
-        <div class="links">
-        <a href="">Home</a>
-        <a href="">Products</a>
-        <a href="./about us.html">About</a>
-        <a href="./contact us.html">Contact</a>
-       
+    <div class="main">
+        <h1 class="Eco">Ecommerce</h1>
+        <div class="layout">
+          <a href="home page.html">Home</a>
+          <a href="product page.html">Products</a>
+          <a href="about us.html">About</a>
+          <a href="contact us.html">Contact</a>
     </div>
-    <button class="Login"> <img src="../images/WhatsApp Image 2024-12-30 at 12.37.29 PM.jpeg" alt="" height="20px">Login</button>
-    <button class="Register"> <img src="../images/WhatsApp Image 2024-12-30 at 12.37.09 PM.jpeg" alt="" height="20px">Register</button>
-    <button class="Cart"> <img src="../images/WhatsApp Image 2024-12-30 at 12.36.39 PM.jpeg" alt="" height="20px">Cart(0)</button>
-    </div> 
-    <div class="three">
-<h4>Email address</h4>
-<input type="text"Enter your name placeholder="name@example.com">
-<h4>Password</h4>
-<input type="text"name@example.com placeholder="Password">
-<h4>New Here?<a class="underline" href="register page.html">Register</a></h4>
-
-</div>
-<button class="send">Send</button>
-<h4 class="name">Made with 💚 by Ambodula Ammulu</h4>
-    
+    <a href="login page.html"><button class="button1"><i class="fa-solid fa-right-to-bracket"></i>Login</button></a>
+                    <a href="register page.html"><button class="button1"><i class="fa-solid fa-user-plus"></i>Register</button></a>
+                    <a href="cart page.html"><button class="button1"><i class="fa-solid fa-cart-shopping"></i>Cart<span> (0)</span></button></a>
+        <br><hr>
+     </div><br><br>
+     <h1 class="head">Login</h1>
+     <hr>
+     <div class="mails">
+     <p>Email address</p>
+     <input class="mail" type="text" placeholder="name@example.com">
+     <p>Password</p>
+     <input class="pwd" type="password" placeholder="password">
+     <p>New Here?<a class="next" href="Register-page.html">Register</a></p>
+     </div>
+     <input class="log1" type="button" value="Login">
+     <p class="sr">Made With <i id="heart" class="fa-solid fa-heart text-danger"></i> by <u>A.AMMULU</u></p><br><br>
 </body>
 </html>
